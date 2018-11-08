@@ -23,21 +23,43 @@ body a {
 	justify-content: center;
 	align-items: center;
 	flex-direction: row-reverse;
+	height: 30px
 }
 
 #navbar >li {
 	display: inline-block;
 	text-align: center;
 	margin-left: 4%;
-
+    line-height: 30px;
+    height: 30px;
 }
 
 #app_icon {
-	width: 32px;
-	height: auto;
+	height: 30px;
+	width: auto;
 	opacity: 0.5;
 }
 
+#login_button {
+	background-color: blue;
+	padding-left: 12px;
+	padding-right: 12px;
+	background: #4285f4;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    background: linear-gradient(top,#4387fd,#4683ea);
+	color: white !important;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+
+}
+
+#login_button a {
+	color: white !important;
+}
 
 #form-container {
 	margin-left: auto;
@@ -45,6 +67,8 @@ body a {
 	position: relative;
 	width: 600px;
 	padding-top: 200px;
+	color: white !important;
+
 }
 
 #google_logo {
@@ -53,15 +77,25 @@ body a {
 	margin-right: auto;
 }
 
-#search_bar  {
+#search_box {
 	background-color: white;
-  	border: 1px solid #eee;
-  	box-shadow: 0.5px 2px 2px 0.5px rgba(0,0,0,0.2);
-	font-size: 16px;
-	height: 40px;
-	padding-left: 15px;
-	width: 100%;
-	margin-top: 3%;
+    border: 1px solid #eee;
+    box-shadow: 0.5px 2px 2px 0.5px rgba(0,0,0,0.2);
+    font-size: 16px;
+    height: 40px;
+}
+
+#search_bar  {
+    display: block;
+    top: 0;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 15px;
+    width: 90%;
+    margin-top: 5px;
+    outline: none;
 }
 
 #search_buttons {
@@ -82,7 +116,7 @@ body a {
 	width: 24px;
 	height: 24px;
 	bottom: 65px;
-    right: 5px;
+    right: 19px;
 }
 
 .buttons_styling {
@@ -105,7 +139,7 @@ body a {
 	background-color: #F1F1F2;
 	position: absolute;
 	bottom: 0;
-	height: 74px;
+	height: 78px;
 	width: 100%;
 }
 
@@ -113,8 +147,9 @@ body a {
 	border-top: 0.5px solid #E3E3E3;
 	border-bottom: 0.5px solid #E3E3E3;
 	height: 50%;
-	padding-left: 30px;
-
+	padding-left: 19px;
+	color: #707070;
+	font-size: 15px;
 }
 
 #bottom_bar {
@@ -122,6 +157,10 @@ body a {
 	width: 50%%;
 }
 
+#bottom_bar a {
+	font-size: 13px !important;
+	color: rgb(99, 88, 93) !important;
+}
 
 #left_panel {
 	position: absolute;
@@ -137,9 +176,11 @@ body a {
 	left: 0;
 	bottom: 0;
 	height: 37px;
-	display: flex;
+	display: inline-block;
+	line-height: 37px;
 	justify-content: center;
 	align-items: center;
+	text-align: left;
 	flex-direction: row-reverse;
 	width: 260px;
 	margin-bottom: 0px;
@@ -151,7 +192,7 @@ body a {
 #left_bottom_links >li {
 	display: inline-block;
 	text-align: center;
-	margin-left: 4%;
+	margin-right: 4%;
     margin-bottom: 0px;
     margin-top: 0px;
 
@@ -172,13 +213,17 @@ body a {
 	right: 0;
 	bottom: 0;
 	height: 37px;
-	display: flex;
+	display: inline-block;
+	line-height: 37px;
 	justify-content: center;
 	align-items: center;
+	text-align: right;
 	flex-direction: row;
-	width: 400px;
+	width: 300px;
 	margin-bottom: 0px;
     margin-top: 0px;
+    padding-right: 19px;
+    padding-left: 0px;
 }
 
 
